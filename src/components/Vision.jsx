@@ -25,6 +25,7 @@ const Vision = () => {
 
         if (!fname || !email || !phone || !projectdetail) {
             alert("All fields are required");
+            return;
         }
 
         console.log("Form Submitted:", visionForm);
@@ -95,10 +96,9 @@ const Vision = () => {
                             onChange={handleChange}
                         ></textarea>
                     </div>
-                    <input
-                        type="submit"
-                        value="Get a Quote"
-                    />
+                    <button className="vision-submit-btn" type="submit">
+                        Get a Quote
+                    </button>
                 </form>
             </div>
         </section>

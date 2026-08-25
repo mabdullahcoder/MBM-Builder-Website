@@ -15,9 +15,9 @@ export const Footer = () => {
                     <div className="footer-section footer-contact">
                         <h4 className="footer-heading">Contact Us</h4>
                         <div className="footer-info">
-                            <p>H# 11, B.Street, Y Block, Govt Colony, Okara</p>
-                            <p>0303 2243305 | 0340 6610887</p>
-                            <p>shmunawarseed@gmail.com</p>
+                            <p>54 / 2-L Okara, Near The Pioneer High School</p>
+                            <p>0328 0571754</p>
+                            <p>mabdullah13954@gmail.com</p>
                         </div>
                     </div>
 

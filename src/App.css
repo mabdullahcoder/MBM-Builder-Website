@@ -528,7 +528,9 @@ nav {
 
 @media (max-width: 768px) {
     .heroSection {
-        min-height: auto;
+        height: calc(100svh - 68px);
+        min-height: 0;
+        width: 100%;
         padding: 6rem 1.5rem 3rem;
         background-attachment: scroll;
     }
@@ -550,11 +552,14 @@ nav {
     .hero-title {
         font-size: 3rem;
         line-height: 3.5rem;
+        max-width: 100%;
+        overflow-wrap: break-word;
     }
 
     .hero-description {
         max-width: 100%;
         font-size: var(--fs-14);
+        overflow-wrap: break-word;
     }
 
     .hero-btn {
@@ -570,6 +575,7 @@ nav {
 
 @media (max-width: 480px) {
     .heroSection {
+        height: calc(100svh - 60px);
         padding: 5.5rem 1rem 2.5rem;
     }
 
@@ -578,8 +584,8 @@ nav {
     }
 
     .hero-title {
-        font-size: 2.5rem;
-        line-height: 3rem;
+        font-size: 2rem;
+        line-height: 2.35rem;
     }
 
     .hero-description {
@@ -1876,24 +1882,38 @@ nav {
     resize: none;
 }
 
-.vision-form-container input[type="submit"] {
+.vision-submit-btn {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: block;
+    width: 100%;
     padding: 1rem 2rem;
-    background-image: linear-gradient(to right, var(--accent-dark) 50%, var(--accent-color) 50%);
-    background-size: 202% 100%;
-    background-position: right bottom;
-    color: white;
+    background-color: var(--accent-color);
+    color: var(--white-clr);
     border: none;
     border-radius: 12px;
     font-size: var(--fs-16);
     font-weight: 600;
     cursor: pointer;
-    transition: background-position 0.45s ease, transform var(--transition-fast);
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
     margin-top: 0.5rem;
 }
 
-.vision-form-container input[type="submit"]:hover {
-    background-position: left bottom;
+.vision-submit-btn:hover,
+.vision-submit-btn:focus-visible {
+    background-color: var(--accent-dark);
     transform: translateY(-2px);
+}
+
+.vision-submit-btn:focus-visible {
+    outline: 3px solid rgba(2, 139, 20, 0.3);
+    outline-offset: 3px;
+}
+
+.vision-submit-btn:active {
+    background-color: var(--accent-dark);
+    transform: translateY(0);
 }
 
 /* Responsive Vision Section */
@@ -1956,7 +1976,7 @@ nav {
         padding: 0.875rem 1rem;
     }
 
-    .vision-form-container input[type="submit"] {
+    .vision-submit-btn {
         padding: 0.875rem 1.5rem;
         font-size: var(--fs-14);
     }

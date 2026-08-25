@@ -130,11 +130,11 @@ export const Contact = () => {
                                 <div className="contact-details">
                                     <div className="contact-item">
                                         <MdOutlineLocalPhone className="contact-icon" />
-                                        <p>0303-2243305 | 0340-6610887</p>
+                                        <p>0328 0571754</p>
                                     </div>
                                     <div className="contact-item">
                                         <TfiEmail className="contact-icon" />
-                                        <p>shmunawarseed@gmail.com</p>
+                                        <p>mabdullah13954@gmail.com</p>
                                     </div>
 
                                 </div>
@@ -157,7 +157,7 @@ export const Contact = () => {
                                     <h3>Visit Our Office</h3>
                                     <div className="address-item">
                                         <CiLocationOn className="address-icon" />
-                                        <p>H# . 11, B.Street, Y, Block, Govt, Colony, Okara</p>
+                                        <p>54 / 2-L Okara, Near The Pioneer High School</p>
                                     </div>
                                 </div>
                             </div>
