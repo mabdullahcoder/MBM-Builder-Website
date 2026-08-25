@@ -291,10 +291,7 @@ nav {
         padding: 0 1.25rem;
     }
 
-    .nav-bar li {
-        border-bottom: 1px solid var(--gray-100);
-    }
-
+    .nav-bar li,
     .nav-bar li:last-child {
         border-bottom: none;
     }
@@ -317,6 +314,25 @@ nav {
         background-color: var(--accent-light);
         color: var(--accent-dark);
         padding-left: 1.1rem;
+    }
+
+    .menu-toggle::before,
+    .menu-toggle:hover::before {
+        display: none;
+    }
+
+    .menu-toggle:hover,
+    .menu-toggle:active,
+    .menu-toggle:focus-visible {
+        background: var(--gray-50);
+        border-color: var(--gray-200);
+        color: var(--heading-color);
+        transform: none;
+    }
+
+    .menu-toggle:focus-visible {
+        outline: 2px solid var(--gray-300);
+        outline-offset: 2px;
     }
 
     .nav-backdrop {
